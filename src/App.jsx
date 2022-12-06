@@ -1,20 +1,28 @@
-
-import CustomNavbar from './components/CustomNavbar.jsx'
-import ItemListContainer from './components/ItemListContainer.jsx'
-import Footer from './components/Footer.jsx'
-
-import './App.css'
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import ItemListContainer from "./components/ItemListContainer.jsx";
+import Nosotros from "./views/Nosotros.jsx";
+import Carta from "./views/Carta.jsx";
+import Sedes from "./views/Sedes.jsx";
+import TrabajaConNosotros from "./views/TrabajaConNosotros.jsx";
+import ItemDetailContainer from "./components/ItemDetailContainer.jsx"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
-  let message = 'En este lugar somos buena onda, creemos que lo bueno se comparte,nos gusta dejarla toda en la parrilla, amamos que sientas que este es tu lugary que te lleves siempre la mejor energía en forma de hamburguesa.'
 
-
-  return(
-    <div className="burguer">
-    <CustomNavbar/>
-    <ItemListContainer text={message}/>
-    <Footer />
-    </div>
-  )
-}
-export default App
+  return (
+    <BrowserRouter className="burguer">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Nosotros/>} />
+        <Route path="/carta" element={<Carta/>} />
+        <Route path="/sedes" element={<Sedes/>} />
+        <Route path="/domicilios" element={<ItemListContainer/>} />
+        <Route path="/product/:idProduct" element={<ItemDetailContainer/>} />
+        <Route path="/trabajaConNosotros" element={<TrabajaConNosotros/>} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
+};
+export default App;

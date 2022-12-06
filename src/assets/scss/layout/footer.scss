@@ -1,0 +1,73 @@
+/** FOOTER STYLES **/
+.burguer-footer {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+
+.burguer-domicile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.motorcycle-img {
+  width: 280px;
+  height: 280px;
+  justify-self: end;
+  padding-top: 20px;
+  transition: transform 1s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.button-domicile {
+  font-family: "Yeseva One", cursive;
+  justify-self: start;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  width: auto;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    font-size: 2.3rem;
+  }
+}
+
+.burguer-social-media {
+  background-image: url("https://i.ibb.co/Jv29hYf/fondo.png");
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    span {
+      font-family: "Yeseva One", cursive;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #000;
+    }
+    svg {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+      margin-bottom: 10px;
+      border-radius:50%;
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

@@ -1,20 +1,29 @@
-const ItemListContainer = (props) => {
+import { GiKnifeFork } from "react-icons/gi";
+import { useState, useEffect } from "react";
+import ItemList from "./ItemList.jsx";
+import CustomFetch from "../utils/CustomFetch";
+import AllProducts from "../utils/Products.json";
+
+const Domicilios = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    CustomFetch(2000, AllProducts)
+      .then((data) => setProducts(data))
+      .catch((error) => console.log(error));
+  }, []);
+
   return (
     <div className="burguer-content">
-      <img
-          className="burguer-content__img1"
-          src="https://officeburger.com/wp-content/uploads/2022/01/the-burger-experts.jpg"
-          alt="burguer-experts"
-        />
-      <section className="burguer-content__img2" id="nosotros">
-          <div className="burguer-message">
-            <h2>Burguer Chips</h2><br />
-            <span>
-              {props.text}
-            </span>
-          </div>
-        </section>
+      <section className="burguer-content__img"></section>
+      <section className="burguer-domicilios">
+        <div className="burguer-domicilios__titulo">
+          <span>Productos</span>
+          <GiKnifeFork />
+        </div>
+      </section>
+      <ItemList data={products}/>
     </div>
   );
 };
-export default ItemListContainer;
+export default Domicilios;

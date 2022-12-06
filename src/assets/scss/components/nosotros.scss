@@ -1,0 +1,86 @@
+/** CONTENT STYLES **/
+
+.burguer-content {
+  &__nosotros-hero-image {
+    height: auto;
+    width: 100%;
+  }
+  &__nosotros-img {
+    background-image: url("https://i.ibb.co/n6hCyfq/office-en-la-ciudad.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 1200px) {
+      width: 100%;
+      height: auto;
+    }
+    @media (max-width: 400px) {
+      width: 100%;
+    }
+  }
+  &__nosotros-carta {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 80px;
+    img{
+      width: 30px;
+      height: 30px;
+      color: #000;
+      margin-left: 10px;
+  
+    }
+  }
+}
+
+.burguer-message {
+  width: 50%;
+  height: 500px;
+  padding-left: 20px;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+  &__title {
+    display: inline-block;
+    font-family: "Yeseva One", cursive;
+    background-color: #ffce12;
+    font-size: 2rem;
+  }
+  &__text {
+    font-family: "Yeseva One", cursive;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  &__text-cursive {
+    display: inline-block;
+    font-family: "Satisfy", cursive;
+    font-size: 2rem;
+  }
+  &__text-black {
+    display: inline-block;
+    font-family: "Yeseva One", cursive;
+    color: #fff;
+    background-color: #000;
+    font-size: 2rem;
+  }
+}
+
+.button-carta {
+  font-family: "Yeseva One", cursive;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
+  padding: 20px 40px;
+  border: 4px solid #000;
+  border-radius: 15px;
+  &:hover {
+    background-color: #ffce12;
+    font-size: 2.8rem;
+    color: #000;
+  }
+}

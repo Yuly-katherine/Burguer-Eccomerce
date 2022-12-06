@@ -1,0 +1,103 @@
+.burguer-content {
+  &__sedes-hero-image {
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  &__sedes-reservas-sociales {
+    background-color: #73c3af;
+    height: 500px;
+    width: 100%;
+    display: flex;
+  }
+  &__sedes-reservas-img {
+    margin: 0 auto;
+    margin-top: 70px;
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+}
+
+.burguer-sedes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 400px 400px;
+  &__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+  }
+  &__text {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.8rem;
+    background-color: #0005;
+    border-radius: 5px;
+    width: 90%;
+    height: 13%;
+    letter-spacing: 8px;
+    align-self: center;
+  }
+}
+
+.img1 {
+  background-image: url("https://i.ibb.co/qNPQqSt/envigado-sede.jpg");
+}
+.img2 {
+  background-image: url("https://i.ibb.co/njP3R72/sede-poblado.jpg");
+}
+.img3 {
+  background-image: url("https://i.ibb.co/k3Pyqs8/palmas-sede.jpg");
+}
+.img4 {
+  background-image: url("https://i.ibb.co/Wx0Jjcq/sede-laureles.jpg");
+}
+.img5 {
+  background-image: url("https://i.ibb.co/mCb1sSj/sede-escobero.jpg");
+}
+.img6 {
+  background-image: url("https://i.ibb.co/5hSVVPp/universidad.jpg");
+}
+
+.burguer-message-sedes {
+  width: 400px;
+  padding-left: 40px;
+  padding-top: 110px;
+  &__title {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: "Satisfy", cursive;
+    font-size: 2rem;
+  }
+  &__text-white {
+    display: inline-block;
+    font-family: "Yeseva One", cursive;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  &__text-yellow {
+    display: inline-block;
+    font-family: "Yeseva One", cursive;
+    color: #ffce12;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .burguer-sedes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px 400px 400px;
+  }
+  .burguer-content__img3 {
+    height: 450px;
+  }
+}

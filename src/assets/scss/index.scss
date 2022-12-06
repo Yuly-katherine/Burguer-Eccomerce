@@ -1,0 +1,17 @@
+
+/*Abstract*/
+@use "./abstract/_reset.scss";
+@use "./abstract/_variables.scss";
+@use "./abstract/_mixins.scss";
+
+/*Layout*/
+@use "./layout/layout.scss";
+@use "./layout/navbar.scss";
+@use "./layout/footer.scss";
+
+/*Components*/
+@use "./components/nosotros.scss";
+@use "./components/carta.scss";
+@use "./components/sedes.scss";
+@use "./components/domicilios.scss";
+@use "./components/trabajaConNosotros.scss";

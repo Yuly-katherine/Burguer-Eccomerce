@@ -54,3 +54,8 @@
     width: 10%;
   }
 }
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #000 !important;
+  background-color: #ffce12 !important;
+}

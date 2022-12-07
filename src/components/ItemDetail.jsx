@@ -1,3 +1,5 @@
+import ItemCount from "./ItemCount.jsx"
+
 const ItemDetail = ({product}) => {
   return (
     <div className="product-detail">
@@ -10,8 +12,8 @@ const ItemDetail = ({product}) => {
       <div className="product-detail__info">
         <h1 className="product-title">{product.nombre}</h1>
         <span className="product-descripcion">{product.descripcion}</span>
-        <span className="product-precio">${product.precio}</span>
-        <button className="product-btn">Agregar al carrito</button>
+        <span className="product-price">${product.precio}</span>
+        <ItemCount initial={1}/>
       </div>
     </div>
   );

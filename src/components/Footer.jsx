@@ -1,4 +1,5 @@
 import { FaFacebook,FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -9,9 +10,9 @@ const Footer = () => {
           className="motorcycle-img"
           src="https://officeburger.com/wp-content/uploads/2022/01/domicilios-office-burger.svg"
         />
-        <a className="button-domicile" href="./domicilios.html">
+        <Link className="button-domicile" to="/">
           Domicilios
-        </a>
+        </Link>
       </div>
       <div className="burguer-social-media">
         <div className="burguer-social-media__type">

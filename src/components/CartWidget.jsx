@@ -1,10 +1,10 @@
-import { FaCartPlus } from 'react-icons/fa';
+import { BsCart4 } from 'react-icons/bs';
 
 const CartWidget = () => {
 
   return(
     <div className="burguer-cart">
-        <FaCartPlus />
+        <BsCart4 />
     </div>
   )
 }

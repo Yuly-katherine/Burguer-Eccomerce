@@ -1,4 +1,3 @@
-import Spinner from "react-bootstrap/Spinner";
 import Item from "./Item.jsx";
 
 const ItemList = ({ data }) => {
@@ -11,8 +10,15 @@ const ItemList = ({ data }) => {
           ))}
         </div>
       ) : (
-        <div className="spinner">
-          <Spinner animation="border" variant="warning" />
+        <div className="loading">
+          <img
+            src="https://i.ibb.co/nj1f0WK/burger.png"
+            className="loading__img"
+            width="50"
+            height="50"
+            alt="Burguerlogo"
+          />
+          <span className="loading__text">Loading...</span>
         </div>
       )}
     </>

@@ -14,11 +14,12 @@ const App = () => {
     <BrowserRouter className="burguer">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Nosotros/>} />
+        <Route path="/" element={<ItemListContainer/>} />
+        <Route path="/nosotros" element={<Nosotros/>} />
         <Route path="/carta" element={<Carta/>} />
         <Route path="/sedes" element={<Sedes/>} />
-        <Route path="/domicilios" element={<ItemListContainer/>} />
-        <Route path="/product/:idProduct" element={<ItemDetailContainer/>} />
+        <Route path="/categoria/:idCategoria" element={<ItemListContainer/>} />
+        <Route path="/producto/:idProducto" element={<ItemDetailContainer/>} />
         <Route path="/trabajaConNosotros" element={<TrabajaConNosotros/>} />
       </Routes>
       <Footer />

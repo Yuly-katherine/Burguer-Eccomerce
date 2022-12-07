@@ -19,3 +19,37 @@
   grid-row: 3/4;
   grid-column: 1/5;
 }
+
+.loading {
+  height: 40vh;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  &__img{
+    animation: spinner 2000ms infinite;
+
+  }
+  &__text{
+    font-weight: bold;
+    font-family: "Yeseva One", cursive;
+
+  }
+}
+
+@keyframes spinner{
+  10%, 90%{
+    transform: translate(-1px,0);
+  }
+  20%, 80%{
+    transform: translate(2px,0);
+  }
+  30%, 50%, 70%{
+    transform: translate(-4px,0);
+  }
+  40%, 60%{
+    transform: translate(4px,0);
+  }
+
+}

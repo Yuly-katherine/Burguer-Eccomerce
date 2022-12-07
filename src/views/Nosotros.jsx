@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Nosotros = () => {
   return (
     <div className="burguer-content">
@@ -30,13 +32,13 @@ const Nosotros = () => {
         </div>
       </section>
       <section className="burguer-content__nosotros-carta">
-        <a className="button-carta" href="./pages/carta.html">
+        <Link className="button-carta" to="/carta">
           Carta
           <img
             src="https://i.ibb.co/tHMgWQ8/emoticon.png"
             alt="carta"
           />
-        </a>
+        </Link>
       </section>
     </div>
   );

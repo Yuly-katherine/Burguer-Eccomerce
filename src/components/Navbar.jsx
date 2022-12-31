@@ -54,7 +54,7 @@ const CustomNavbar = () => {
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link as={Link} to="/" className="burguer-options__cart">
+              <Nav.Link as={Link} to="/carrito" className="burguer-options__cart">
                 <CartWidget />
               </Nav.Link>
             </Nav>

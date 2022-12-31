@@ -14,7 +14,7 @@ const itemDetailContainer = () => {
 
   const consumedApiProducts = () => {
     CustomFetch(
-      2000,
+      1000,
       AllProducts.find((product) => product.id === parseInt(idProducto))
     )
       .then((data) => setProductDetail(data))
@@ -32,7 +32,7 @@ const itemDetailContainer = () => {
             height="50"
             alt="Burguerlogo"
           />
-          <span className="loading__text">Loading...</span>
+          <span className="loading__text">Cargando...</span>
         </div>
       ) : (
         <ItemDetail product={productDetail}/>

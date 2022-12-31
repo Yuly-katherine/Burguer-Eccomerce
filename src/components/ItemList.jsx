@@ -18,7 +18,7 @@ const ItemList = ({ data }) => {
             height="50"
             alt="Burguerlogo"
           />
-          <span className="loading__text">Loading...</span>
+          <span className="loading__text">Cargando...</span>
         </div>
       )}
     </>

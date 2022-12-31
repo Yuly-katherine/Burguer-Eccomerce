@@ -59,3 +59,12 @@
   color: #000 !important;
   background-color: #ffce12 !important;
 }
+
+.cartWidget{
+  display: flex;
+    align-items: flex-start;
+}
+
+.badge{
+  font-size: 0.5em !important;
+}

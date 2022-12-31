@@ -1,14 +1,10 @@
 import { BsPlusLg } from "react-icons/bs";
 import { RiSubtractFill } from "react-icons/ri";
-import { useState, useEffect } from "react";
+import {useState} from "react";
 
-const ItemCount = ({ initial }) => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    setCount(initial);
-  }, []);
-
+const ItemCount = ({ onAdd }) => {
+  const [count, setCount] = useState(1);
+ 
   const increment = () => {
     setCount(count + 1);
   };
@@ -16,6 +12,7 @@ const ItemCount = ({ initial }) => {
   const decrement = () => {
     if (count !== 1) return setCount(count - 1);
   };
+
   return (
     <div className="product-counter">
       <div>
@@ -34,7 +31,7 @@ const ItemCount = ({ initial }) => {
           <RiSubtractFill />
         </button>
       </div>
-      <button className="product-btn">Agregar al carrito</button>
+      <button className="product-btn" onClick={() => onAdd(count)}>Agregar al carrito</button>
     </div>
   );
 };

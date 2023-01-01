@@ -31,20 +31,20 @@ const CustomNavbar = () => {
               </Nav.Link>
               <NavDropdown title="Domicilios" id="collasible-nav-dropdown">
                 <NavDropdown.Item as={Link} to="/">Todos</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/categoria/hamburguesas">
+                <NavDropdown.Item as={Link} to="/categoria/Hamburguesas">
                   Hamburguesas
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/categoria/entradas">
+                <NavDropdown.Item as={Link} to="/categoria/Entradas">
                 Entradas
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/categoria/parrilla">Parrilla</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/categoria/ensaladas">
+                <NavDropdown.Item as={Link} to="/categoria/Parrilla">Parrilla</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/categoria/Ensaladas">
                   Ensaladas
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/categoria/jugos">Jugos</NavDropdown.Item>
-                <NavDropdown.Item  as={Link} to="/categoria/cervezas">Cervezas</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/categoria/gaseosas">Gaseosas</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/categoria/postres">Postres</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/categoria/Jugos">Jugos</NavDropdown.Item>
+                <NavDropdown.Item  as={Link} to="/categoria/Cervezas">Cervezas</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/categoria/Gaseosas">Gaseosas</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/categoria/Postres">Postres</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={Link}
                 to="trabajaConNosotros"

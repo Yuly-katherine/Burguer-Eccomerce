@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import CustomFetch from "../utils/CustomFetch";
 import AllProducts from "../utils/Products.json";
 import { useParams } from "react-router-dom";
-import ItemDetail from "./ItemDetail.jsx"
+import ItemDetail from "./ItemDetail.jsx";
+// import {fetchOneFromFireStore} from "../utils/FirestoreFetch.jsx";
 
 const itemDetailContainer = () => {
   const [productDetail, setProductDetail] = useState({});
@@ -10,7 +11,10 @@ const itemDetailContainer = () => {
 
   useEffect(() => {
     consumedApiProducts();
-  }, [productDetail]);
+    // fetchOneFromFireStore(idProducto)
+    // .then((result) => console.log(result))
+    // .catch((err) => console.log(err));
+  }, []);
 
   const consumedApiProducts = () => {
     CustomFetch(
@@ -35,7 +39,7 @@ const itemDetailContainer = () => {
           <span className="loading__text">Cargando...</span>
         </div>
       ) : (
-        <ItemDetail product={productDetail}/>
+        <ItemDetail product={productDetail} />
       )}
     </div>
   );

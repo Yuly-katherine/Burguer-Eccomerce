@@ -1,9 +1,8 @@
 import { GiKnifeFork } from "react-icons/gi";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
-import AllProducts from "../utils/Products.json";
+import {fetchFromFireStore} from "../utils/FirestoreFetch.jsx"
 import ItemList from "./ItemList.jsx";
-import CustomFetch from "../utils/CustomFetch";
 
 /** DOMICILIOS VIEW**/
 
@@ -12,20 +11,10 @@ const ItemListContainer = () => {
   const { idCategoria } = useParams();
 
   useEffect(() => {
-    consumeApiProducts();
-  }, [products]);
-
-  const consumeApiProducts = () => {
-    CustomFetch(
-      2000,
-      AllProducts.filter((products) => {
-        if (idCategoria === undefined) return products;
-        return products.categoria.toLowerCase() === idCategoria;
-      })
-    )
-      .then((data) => setProducts(data))
-      .catch((error) => console.log(error)); 
-  };
+    fetchFromFireStore(idCategoria)
+      .then((result) => setProducts(result))
+      .catch((err) => console.log(err));
+  }, [idCategoria]);
 
   return (
     <div className="burguer-content">
@@ -40,7 +29,7 @@ const ItemListContainer = () => {
           <GiKnifeFork />
         </div>
       </section>
-      <ItemList data={products}/>
+      <ItemList data={products} />
     </div>
   );
 };

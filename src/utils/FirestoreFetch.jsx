@@ -23,7 +23,10 @@ export const fetchOneFromFireStore = async (idProducto) => {
   const docRef = doc(db, "productos", idProducto);
   const docSnap = await getDoc(docRef);
 
+  console.log(docSnap.exists());
+
   if (docSnap.exists()) {
+
     return {
       id: idProducto,
       ...docSnap.data(),

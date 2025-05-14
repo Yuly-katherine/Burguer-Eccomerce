@@ -390,13 +390,13 @@ export const Productos = [
 ]
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDUauqirk9kgpolD6rg5CMKFvr-L1oR1x8",
-    authDomain: "burguer-ecommerce-6c7d9.firebaseapp.com",
-    projectId: "burguer-ecommerce-6c7d9",
-    storageBucket: "burguer-ecommerce-6c7d9.appspot.com",
-    messagingSenderId: "415817765167",
-    appId: "1:415817765167:web:1ea45b5969164551d551da"
-};
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID
+  };
 
 
 const app = initializeApp(firebaseConfig);

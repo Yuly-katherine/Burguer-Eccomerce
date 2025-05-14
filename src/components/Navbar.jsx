@@ -9,7 +9,7 @@ const CustomNavbar = () => {
         <Container>
           <Navbar.Brand as={Link} to="/" className="burguer-brand">
             <img
-              src="../../public/burger.png"
+              src="/burger.png"
               width="50"
               height="50"
               className="d-inline-block align-top"

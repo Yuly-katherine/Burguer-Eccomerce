@@ -1,30 +1,41 @@
-# Ecommerce Burguer
+# 🍔 Ecommerce Burguer
 
-Proyecto final para el curso de ReactJS en CoderHouse.
-descripcion.....
+- Explorar la **carta o menú**.
+- Consultar las diferentes **sedes** disponibles.
+- Agregar productos al **carrito de compras**.
+- Finalizar la compra con su orden registrada en **Firestore**.
+- **trabaja con nosotros**, enviar información general.
+
+🔗 **Puedes ver el proyecto funcionando aquí**:  
+👉 [https://yuly-katherine.github.io/Burguer-Eccomerce/](https://yuly-katherine.github.io/Burguer-Eccomerce/)
 
 
-* **Puedes ver el Proyecto en  ** 
+---
 
+## 🛠️ Tecnologías utilizadas
 
-### Frontend
+### 📌 Frontend
 
-* **React.js**
+- **React.js** – Biblioteca principal para construir la interfaz de usuario.
+- **Bootstrap** – Para el diseño responsivo y componentes estilizados.
+- **SweetAlert2** – Para mostrar alertas amigables y personalizadas.
+- **React Icons** – Íconos integrados en la interfaz.
 
-### Frontend
+### 🔥 Backend / Base de datos
 
-* **Firestore**
+- **Firestore (Firebase)** – Almacenamiento de productos y órdenes en tiempo real.
 
-### Librerías 
+## 💡 Funcionalidades destacadas
 
-* **Google fonts**
-* **Boostrap**
-* **SweetAlert2**
-* **React Icons**
+- 🛍️ Sistema de **carrito de compras** con suma total automática.
+- 🔎 Navegación por **categorías de productos**.
+- 🧾 Registro de **órdenes de compra** con detalles.
+- 🌐 Información de las diferentes **sedes** de la hamburguesería.
 
-### Control de codigo fuente
+---
 
-* **git**
+## 🚀 ¿Cómo ejecutar el proyecto localmente?
 
-### ENLACE AL GIFT 🎁
- https://makeagif.com/i/SHgR4A
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Yuly-katherine/Burguer-Eccomerce.git

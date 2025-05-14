@@ -13,7 +13,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <CartContextProvider>
-      <BrowserRouter className="burguer">
+      <BrowserRouter className="burguer" basename="/Burguer-Eccomerce">
         <Navbar />
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
